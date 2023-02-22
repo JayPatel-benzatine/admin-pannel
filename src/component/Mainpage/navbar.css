@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+
+.navbar-brand {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #012970 !important;
+}
+.navbar {
+  width: 100%;
+  z-index: 15000;
+  padding: 10px 0px;
+  box-shadow: 0 5px 30px 0 rgb(82 63 105 / 20%);
+
+}
+
+.user_drop {
+  color: #012970;
+  font-size: 15px;
+  font-weight: 600;
+  outline: unset;
+  border: unset;
+  background: unset;
+}
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: unset;
+  right: 0px;
+  margin-top: 1rem;
+}
+.dropdown-menu {
+  border: unset;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 30px 0 rgb(82 63 105 / 20%);
+}
+.dropdown-item:hover {
+  color: #012970;
+  background-color: #e9ecef;
+}
+.dropdown-menu li:hover {
+  color: #012970;
+}
+.messages,
+.bell {
+  font-size: 24px;
+  color: #012970 !important;
+}
+
+#dropdown3,
+#dropdown2 {
+  width: 300px;
+}
+
+.messages_list {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  justify-content: center;
+}
+.message_details p {
+  font-size: 12px;
+}
+.span_main {
+  font-size: 15px;
+}
+.dropdown-menu::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  position: absolute;
+  top: -7px;
+  right: 8px;
+  transform: rotate(45deg);
+  border-top: 1px solid #eaedf1;
+  border-left: 1px solid #eaedf1;
+}
+.seach_btn {
+  position: relative;
+  right: 60px;
+}
+
+.form-control:focus {
+  border-color: rgb(221, 220, 220);
+  outline: 0 !important;
+  box-shadow: unset !important;
+}
+.btn:focus {
+  box-shadow: unset;
+}
+
+/* hamburger */
+/* 
+.toggle-sidebar-btn {
+  font-size: 32px;
+  padding-left: 10px;
+  cursor: pointer;
+  color: #012970;
+} */
+
+@media (max-width: 768px) and (min-width: 426px) {
+  .logos_title {
+    display: none;
+  }
+  .profile_list {
+    display: none !important;
+  }
+  .messages,
+  .bell {
+    height: 25px !important;
+    width: 25px !important;
+  }
+}
+@media (max-width: 425px) and (min-width: 320px) {
+  .logos_title,
+  .user_dropdown {
+    display: none;
+  }
+  .messages,
+  .bell {
+    height: 25px !important;
+    width: 25px !important;
+  }
+
+  #dropdown2 {
+    right: -40px;
+  }
+  #dropdown3 {
+    right: -80px;
+  }
+  .dropdown-menu::before {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .search {
+    display: block !important;
+  }
+}

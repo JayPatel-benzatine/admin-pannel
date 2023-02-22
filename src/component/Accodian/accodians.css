@@ -1,0 +1,43 @@
+.sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
+    transform: rotate(180deg);
+}
+.sidebar-nav .nav-link:hover i {
+    color: #4154f1;
+}
+.sidebar-nav .nav-link .bi-chevron-down {
+    margin-right: 0;
+    transition: transform 0.2s ease-in-out;
+}
+.sidebar-nav .nav-content {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar-nav .nav-content a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #012970;
+    transition: 0.3;
+    padding: 10px 0 10px 40px;
+    transition: 0.3s;
+}
+.circles{
+    font-size: 6px !important;
+    margin-right: 8px;
+    line-height: 0;
+    border-radius: 50%;
+}
+
+.tabs {
+    color: #000000 !important;
+}
+.tabs :hover {
+    color: #0d6efd;
+}
+
+.nav-item:hover .tabsss {
+    color: #000000 !important;
+    background: unset !important;
+}
